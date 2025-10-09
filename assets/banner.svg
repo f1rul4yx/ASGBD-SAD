@@ -1,0 +1,59 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A3D5FF"/>
+      <stop offset="50%" stop-color="#CBA6F7"/>
+      <stop offset="100%" stop-color="#FBC3BC"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
+      .mainText {
+        font-family: 'Fira Code', monospace;
+        font-size: 36px;
+        fill: url(#grad);
+      }
+      .subText {
+        font-family: 'Fira Code', monospace;
+        font-size: 20px;
+        fill: #999999;
+      }
+      .typing {
+        stroke-dasharray: 600;
+        stroke-dashoffset: 600;
+        animation: type 4s steps(40) forwards infinite alternate;
+      }
+      @keyframes type {
+        0% { stroke-dashoffset: 600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .line {
+        stroke: #E0E0E0;
+        stroke-width: 1;
+        opacity: 0.4;
+        animation: float 6s linear infinite;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Fondo sutil -->
+  <rect width="800" height="200" fill="#0D1117"/>
+  <!-- Líneas sutiles animadas -->
+  <line x1="0" y1="50" x2="800" y2="50" class="line"/>
+  <line x1="0" y1="100" x2="800" y2="100" class="line"/>
+  <line x1="0" y1="150" x2="800" y2="150" class="line"/>
+
+  <!-- Iconos (base de datos, seguridad, HA) -->
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" x="20" y="20" width="40" height="40"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" x="70" y="20" width="40" height="40"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" x="120" y="20" width="40" height="40"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" x="170" y="20" width="40" height="40"/>
+
+  <!-- Texto animado -->
+  <text x="250" y="80" class="mainText typing">Jesus, Marina y Diego</text>
+  <text x="250" y="130" class="subText">ASGBD & SAD</text>
+</svg>
