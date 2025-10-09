@@ -1,1 +1,1 @@
-![Banner](assets/banner.svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=50&duration=3000&pause=400&color=A3D5FF&background=FFFFFF00&center=true&vCenter=true&multiline=true&width=800&height=155&lines=Jesus+-+Marina+-+Diego;ASGBD+%26+SAD)](https://git.io/typing-svg)
