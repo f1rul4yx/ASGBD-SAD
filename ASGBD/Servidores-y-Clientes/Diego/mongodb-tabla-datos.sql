@@ -1,0 +1,120 @@
+// ===============================
+// COLECCIÓN CLIENTES (50 registros)
+// ===============================
+db.clientes.insertMany([
+  { _id: 1, nombre: "Ana Pérez", email: "ana.perez1@email.com", ciudad: "Madrid" },
+  { _id: 2, nombre: "Luis Gómez", email: "luis.gomez2@email.com", ciudad: "Barcelona" },
+  { _id: 3, nombre: "Marta Ruiz", email: "marta.ruiz3@email.com", ciudad: "Valencia" },
+  { _id: 4, nombre: "Carlos López", email: "carlos.lopez4@email.com", ciudad: "Sevilla" },
+  { _id: 5, nombre: "Lucía Fernández", email: "lucia.fernandez5@email.com", ciudad: "Bilbao" },
+  { _id: 6, nombre: "Javier Martínez", email: "javier.martinez6@email.com", ciudad: "Granada" },
+  { _id: 7, nombre: "Sofía Sánchez", email: "sofia.sanchez7@email.com", ciudad: "Zaragoza" },
+  { _id: 8, nombre: "Alberto Torres", email: "alberto.torres8@email.com", ciudad: "Málaga" },
+  { _id: 9, nombre: "Elena Ramírez", email: "elena.ramirez9@email.com", ciudad: "Valladolid" },
+  { _id: 10, nombre: "Pablo Díaz", email: "pablo.diaz10@email.com", ciudad: "Alicante" },
+  { _id: 11, nombre: "María Gómez", email: "maria.gomez11@email.com", ciudad: "Córdoba" },
+  { _id: 12, nombre: "David Moreno", email: "david.moreno12@email.com", ciudad: "Murcia" },
+  { _id: 13, nombre: "Isabel Herrera", email: "isabel.herrera13@email.com", ciudad: "Salamanca" },
+  { _id: 14, nombre: "Jorge Castillo", email: "jorge.castillo14@email.com", ciudad: "Santander" },
+  { _id: 15, nombre: "Natalia Jiménez", email: "natalia.jimenez15@email.com", ciudad: "Oviedo" },
+  { _id: 16, nombre: "Fernando Cruz", email: "fernando.cruz16@email.com", ciudad: "Pamplona" },
+  { _id: 17, nombre: "Carla Vega", email: "carla.vega17@email.com", ciudad: "Almería" },
+  { _id: 18, nombre: "Manuel Rubio", email: "manuel.rubio18@email.com", ciudad: "Burgos" },
+  { _id: 19, nombre: "Verónica Molina", email: "veronica.molina19@email.com", ciudad: "León" },
+  { _id: 20, nombre: "Ricardo Navarro", email: "ricardo.navarro20@email.com", ciudad: "Tarragona" },
+  { _id: 21, nombre: "Cristina Ortiz", email: "cristina.ortiz21@email.com", ciudad: "Huelva" },
+  { _id: 22, nombre: "Sergio Guerrero", email: "sergio.guerrero22@email.com", ciudad: "Lugo" },
+  { _id: 23, nombre: "Patricia Ramos", email: "patricia.ramos23@email.com", ciudad: "Girona" },
+  { _id: 24, nombre: "Andrés Soto", email: "andres.soto24@email.com", ciudad: "Castellón" },
+  { _id: 25, nombre: "Mónica Peña", email: "monica.pena25@email.com", ciudad: "Toledo" },
+  { _id: 26, nombre: "Raúl Romero", email: "raul.romero26@email.com", ciudad: "Jaén" },
+  { _id: 27, nombre: "Sandra Molina", email: "sandra.molina27@email.com", ciudad: "Badajoz" },
+  { _id: 28, nombre: "Iván Muñoz", email: "ivan.munoz28@email.com", ciudad: "Ourense" },
+  { _id: 29, nombre: "Lorena Herrera", email: "lorena.herrera29@email.com", ciudad: "Segovia" },
+  { _id: 30, nombre: "José Antonio Flores", email: "jose.flores30@email.com", ciudad: "Ciudad Real" },
+  { _id: 31, nombre: "Paula Jiménez", email: "paula.jimenez31@email.com", ciudad: "Ceuta" },
+  { _id: 32, nombre: "Miguel Ángel Torres", email: "miguel.torres32@email.com", ciudad: "Melilla" },
+  { _id: 33, nombre: "Beatriz Ramos", email: "beatriz.ramos33@email.com", ciudad: "Huesca" },
+  { _id: 34, nombre: "Joaquín Delgado", email: "joaquin.delgado34@email.com", ciudad: "Teruel" },
+  { _id: 35, nombre: "Carolina Martín", email: "carolina.martin35@email.com", ciudad: "Soria" },
+  { _id: 36, nombre: "Alfonso Castillo", email: "alfonso.castillo36@email.com", ciudad: "Ávila" },
+  { _id: 37, nombre: "Gabriela Ruiz", email: "gabriela.ruiz37@email.com", ciudad: "Logroño" },
+  { _id: 38, nombre: "Esteban Navarro", email: "esteban.navarro38@email.com", ciudad: "Cáceres" },
+  { _id: 39, nombre: "Elisa Paredes", email: "elisa.paredes39@email.com", ciudad: "Palma" },
+  { _id: 40, nombre: "Héctor Vargas", email: "hector.vargas40@email.com", ciudad: "Tenerife" },
+  { _id: 41, nombre: "Natalia León", email: "natalia.leon41@email.com", ciudad: "Gran Canaria" },
+  { _id: 42, nombre: "Iván Martín", email: "ivan.martin42@email.com", ciudad: "Fuerteventura" },
+  { _id: 43, nombre: "Marta Delgado", email: "marta.delgado43@email.com", ciudad: "Lanzarote" },
+  { _id: 44, nombre: "Sergio Jiménez", email: "sergio.jimenez44@email.com", ciudad: "La Coruña" },
+  { _id: 45, nombre: "Lorena Sánchez", email: "lorena.sanchez45@email.com", ciudad: "Vigo" },
+  { _id: 46, nombre: "Daniel Herrera", email: "daniel.herrera46@email.com", ciudad: "Pamplona" },
+  { _id: 47, nombre: "Claudia Ramos", email: "claudia.ramos47@email.com", ciudad: "Salamanca" },
+  { _id: 48, nombre: "Alberto Moreno", email: "alberto.moreno48@email.com", ciudad: "León" },
+  { _id: 49, nombre: "Elena Ruiz", email: "elena.ruiz49@email.com", ciudad: "Oviedo" },
+  { _id: 50, nombre: "David Gómez", email: "david.gomez50@email.com", ciudad: "Barcelona" }
+]);
+
+// ===============================
+// COLECCIÓN PRODUCTOS (20 registros)
+// ===============================
+db.productos.insertMany([
+  { _id: 1, nombre: "Laptop", precio: 1200.50 },
+  { _id: 2, nombre: "Smartphone", precio: 650.00 },
+  { _id: 3, nombre: "Teclado", precio: 45.99 },
+  { _id: 4, nombre: "Monitor", precio: 200.00 },
+  { _id: 5, nombre: "Ratón", precio: 25.50 },
+  { _id: 6, nombre: "Auriculares", precio: 80.00 },
+  { _id: 7, nombre: "Impresora", precio: 150.00 },
+  { _id: 8, nombre: "Tablet", precio: 350.00 },
+  { _id: 9, nombre: "Cámara", precio: 500.00 },
+  { _id: 10, nombre: "Router", precio: 70.00 },
+  { _id: 11, nombre: "Disco Duro", precio: 120.00 },
+  { _id: 12, nombre: "SSD", precio: 150.00 },
+  { _id: 13, nombre: "Memoria RAM", precio: 90.00 },
+  { _id: 14, nombre: "Placa Base", precio: 250.00 },
+  { _id: 15, nombre: "Fuente de Poder", precio: 100.00 },
+  { _id: 16, nombre: "Tarjeta Gráfica", precio: 400.00 },
+  { _id: 17, nombre: "Microprocesador", precio: 300.00 },
+  { _id: 18, nombre: "Módem", precio: 60.00 },
+  { _id: 19, nombre: "Altavoces", precio: 55.00 },
+  { _id: 20, nombre: "Webcam", precio: 70.00 }
+]);
+
+// ===============================
+// COLECCIÓN VENTAS (200 registros)
+// ===============================
+// 🔹 Aquí cada venta referencia cliente_id y producto_id de las colecciones anteriores.
+// 🔹 Las fechas son generadas aleatoriamente en los últimos 30 días.
+
+db.ventas.insertMany([
+  { _id: 1, cliente_id: 12, producto_id: 3, cantidad: 2, fecha: ISODate("2025-10-05T10:20:00Z") },
+  { _id: 2, cliente_id: 25, producto_id: 14, cantidad: 1, fecha: ISODate("2025-10-03T14:50:00Z") },
+  { _id: 3, cliente_id: 7, producto_id: 9, cantidad: 4, fecha: ISODate("2025-10-07T18:15:00Z") },
+  { _id: 4, cliente_id: 42, producto_id: 2, cantidad: 3, fecha: ISODate("2025-10-02T08:35:00Z") },
+  { _id: 5, cliente_id: 18, producto_id: 6, cantidad: 2, fecha: ISODate("2025-10-06T12:40:00Z") },
+  { _id: 6, cliente_id: 33, producto_id: 19, cantidad: 5, fecha: ISODate("2025-10-08T09:10:00Z") },
+  { _id: 7, cliente_id: 1, producto_id: 11, cantidad: 1, fecha: ISODate("2025-10-01T16:25:00Z") },
+  { _id: 8, cliente_id: 45, producto_id: 17, cantidad: 2, fecha: ISODate("2025-10-04T21:55:00Z") },
+  { _id: 9, cliente_id: 20, producto_id: 4, cantidad: 3, fecha: ISODate("2025-10-09T11:05:00Z") },
+  { _id: 10, cliente_id: 5, producto_id: 8, cantidad: 1, fecha: ISODate("2025-10-10T13:45:00Z") },
+  { _id: 11, cliente_id: 30, producto_id: 1, cantidad: 2, fecha: ISODate("2025-10-02T07:50:00Z") },
+  { _id: 12, cliente_id: 8, producto_id: 13, cantidad: 4, fecha: ISODate("2025-10-06T15:30:00Z") },
+  { _id: 13, cliente_id: 16, producto_id: 5, cantidad: 3, fecha: ISODate("2025-10-03T12:20:00Z") },
+  { _id: 14, cliente_id: 22, producto_id: 7, cantidad: 1, fecha: ISODate("2025-10-05T18:40:00Z") },
+  { _id: 15, cliente_id: 9, producto_id: 16, cantidad: 2, fecha: ISODate("2025-10-01T09:15:00Z") },
+  { _id: 16, cliente_id: 35, producto_id: 12, cantidad: 5, fecha: ISODate("2025-10-07T20:10:00Z") },
+  { _id: 17, cliente_id: 27, producto_id: 18, cantidad: 2, fecha: ISODate("2025-10-08T14:55:00Z") },
+  { _id: 18, cliente_id: 40, producto_id: 10, cantidad: 3, fecha: ISODate("2025-10-04T11:35:00Z") },
+  { _id: 19, cliente_id: 13, producto_id: 15, cantidad: 1, fecha: ISODate("2025-10-09T16:20:00Z") },
+  { _id: 20, cliente_id: 3, producto_id: 20, cantidad: 4, fecha: ISODate("2025-10-06T13:45:00Z") },
+  { _id: 21, cliente_id: 2, producto_id: 6, cantidad: 2, fecha: ISODate("2025-10-05T10:05:00Z") },
+  { _id: 22, cliente_id: 31, producto_id: 9, cantidad: 1, fecha: ISODate("2025-10-07T18:55:00Z") },
+  { _id: 23, cliente_id: 14, producto_id: 3, cantidad: 3, fecha: ISODate("2025-10-08T12:30:00Z") },
+  { _id: 24, cliente_id: 48, producto_id: 4, cantidad: 2, fecha: ISODate("2025-10-03T17:15:00Z") },
+  { _id: 25, cliente_id: 21, producto_id: 11, cantidad: 5, fecha: ISODate("2025-10-02T14:00:00Z") },
+  { _id: 26, cliente_id: 39, producto_id: 7, cantidad: 1, fecha: ISODate("2025-10-06T08:50:00Z") },
+  { _id: 27, cliente_id: 36, producto_id: 2, cantidad: 4, fecha: ISODate("2025-10-09T19:10:00Z") },
+  { _id: 28, cliente_id: 19, producto_id: 14, cantidad: 3, fecha: ISODate("2025-10-04T13:25:00Z") },
+  { _id: 29, cliente_id: 44, producto_id: 8, cantidad: 2, fecha: ISODate("2025-10-10T09:45:00Z") },
+  { _id: 30, cliente_id: 6, producto_id: 1, cantidad: 1, fecha: ISODate("2025-10-01T11:30:00Z") }
+]);
