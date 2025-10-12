@@ -1,0 +1,29 @@
+{# Extiende la plantilla base: hereda la estructura (head, nav, etc.) #}
+{% extends 'base.html' %}
+
+{# Título de la página (rellena el bloque title de base.html) #}
+{% block title %}Colecciones{% endblock %}
+
+{% block content %}
+
+    {# Muestra quién está autenticado (variable 'usuario' pasada desde app.py) #}
+    <h1>Colecciones accesibles para {{ usuario }}</h1>
+
+    <ul>
+        {# 
+           Iteración Jinja para listar las colecciones.
+           'colecciones' es una lista de strings que viene desde app.py (db.list_collection_names()).
+           Por cada elemento creamos un <li> con un enlace a la vista 'ver_coleccion'.
+        #}
+        {% for coleccion in colecciones %}
+        <li>
+            {# url_for('ver_coleccion', nombre=coleccion) genera una URL como /coleccion/<nombre> #}
+            <a href="{{ url_for('ver_coleccion', nombre=coleccion) }}">{{ coleccion }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {# Enlace para cerrar la sesión. La ruta 'logout' limpia session y redirige al login en app.py. #}
+    <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+
+{% endblock %}
